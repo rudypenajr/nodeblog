@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    if categories
+        ul
+        each category, i in categories
+            li
+                p 
+                    a(href='/categories/show/#{category.title}') #{category.title}
+        
